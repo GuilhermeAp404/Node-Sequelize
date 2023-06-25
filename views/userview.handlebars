@@ -1,0 +1,14 @@
+<a href="/">Voltar</a>
+<h1>{{user.name}}</h1>
+<div class="user-text">
+    <h2>Ocupação</h2>
+    <p>Este Usuário possui o cargo de {{user.occupation}}</p>
+</div>
+<div class="user-text">
+    <h2>Atualizações</h2>
+    {{#if user.newsletter}}
+        <p>Sim, este usuário gostaria de receber as atualizações</p>
+    {{else }}
+        <p>Não, este usuário não gostaria de receber as atualizações</p>
+    {{/if}}
+</div>
